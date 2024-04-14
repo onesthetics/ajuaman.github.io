@@ -1,0 +1,94 @@
+@font-face {
+    font-family: poppins medium;
+    src: url(POPPINS/Poppins-Medium.ttf);
+    font-family: poppins bold;
+    src: url(POPPINS/Poppins-Bold.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(217, 219, 193);
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem calc((100vw - 1300px) /  2);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    float: left;
+}
+
+nav a:hover {
+    color: rgb(245, 255, 102)
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 3rem calc((100vw - 1300px) /  2);
+} 
+
+.coloumn-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(0, 0, 0);
+    padding: 0rem 2rem;
+}
+.coloumn-left h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.coloumn-left p {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-family: poppins medium;
+}
+
+button {
+    padding: 0.7rem 2rem;
+    font-size: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 60px;
+    font-family: poppins bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.column-right {
+    padding: 0rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.preset {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
