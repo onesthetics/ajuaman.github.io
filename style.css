@@ -4,6 +4,8 @@
     font-family: poppins bold;
     src: url(POPPINS/Poppins-Bold.ttf);
 }
+
+/* Mostly unchanged styles */
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -17,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem calc((100vw - 1300px) /  2);
+    padding: 3rem calc((100vw - 1300px) /  2); /* Responsive padding */
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -42,7 +44,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-    padding: 3rem calc((100vw - 1300px) /  2);
+    padding: 3rem calc((100vw - 1300px) /  2); /* Responsive padding */
 } 
 
 .coloumn-left {
@@ -65,13 +67,14 @@ nav a:hover {
     font-family: poppins medium;
 }
 
+/* Responsive button with border radius */
 button {
     padding: 0.7rem 2rem;
-    font-size: 25px;
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
     border: none;
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
-    border-radius: 60px;
+    border-radius: 8vw; /* Responsive border radius using viewport units */
     font-family: poppins bold;
     transition: transform 0.2s ease-in-out;
 }
@@ -90,5 +93,6 @@ button:hover {
 .preset {
     border: 1px solid rgb(0, 0, 0);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: calc(1px + 2px); /* Fixed border radius with some padding */
 }
+
