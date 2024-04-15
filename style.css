@@ -96,3 +96,50 @@ button:hover {
     border-radius: calc(1px + 2px); /* Fixed border radius with some padding */
 }
 
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .product-box {
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .product-box img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .product-box h3 {
+    margin-bottom: 10px;
+    font-family: poppins;
+  }
+  
+  .product-box p {
+    margin-bottom: 20px;
+    font-family: poppins;
+  }
+  
+  .buybtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: quicksand;
+  }
+
+
+
+
