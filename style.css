@@ -19,26 +19,37 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem calc((100vw - 1300px) /  2); /* Responsive padding */
-    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1rem calc((100vw - 1300px) / 2); /* Responsive padding */
+    background-color: white;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  
 }
 
 .logo {
     color: rgb(0, 0, 0);
-    font-weight: bold;
     font-size: 25px;
+    font-family: poppins bold; 
+    background-color: white;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 10px;
     float: left;
+    background-color: white;
+
 }
 
 nav a:hover {
-    color: rgb(245, 255, 102)
+    color: rgb(255, 134, 134);
 }
+
+.img img {
+    width: 100%;
+    height: auto;
+  }
+  
+
 
 .hero-container {
     display: grid;
@@ -46,6 +57,16 @@ nav a:hover {
     
     padding: 3rem calc((100vw - 1300px) /  2); /* Responsive padding */
 } 
+
+.link {
+    background-color: white;
+    margin: 10px;
+}
+.link a {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    font-family: poppins medium;
+}
 
 .coloumn-left {
     display: flex;
