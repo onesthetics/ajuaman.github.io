@@ -1,166 +1,159 @@
-@font-face {
-    font-family: poppins medium;
-    src: url(POPPINS/Poppins-Medium.ttf);
-    font-family: poppins bold;
-    src: url(POPPINS/Poppins-Bold.ttf);
-}
-
-/* Mostly unchanged styles */
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(196, 206, 221);
-}
-
-nav {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem calc((100vw - 1300px) / 2); /* Responsive padding */
-    background-color: white;
-    border-bottom: 2px solid rgb(0, 0, 0);
+@media screen and (max-width: 768px) {
+    .image-container {
+      position: relative; /* Relative positioning for mobile layout */
+      width: 100%; /* Full width on mobile */
+      margin-top: 20px; /* Adjust margin as needed (mobile layout) */
+    }
+  }
   
+  @font-face {
+    font-family: poppins medium;
+    src: url(font/POPPINS/Poppins-Medium.ttf);
+    font-family: poppins bold;
+    src: url(font/POPPINS/Poppins-Bold.ttf);
+    font-family: brulia medium;
+    src: url(font/brulia/bruliavariabletest-text.otf);
 }
+
+* {
+    background-color: rgba(214, 214, 214, 1);
+    margin: 0.3em;
+    padding: 0px 0px;
+    line-height: 1.5;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.navbar {
+    display: flex; /* Makes the navbar a flex container */
+    justify-content: space-between; /* Distributes content with space between */
+    align-items: center; /* Aligns content vertically (optional) */
+    position: relative; /* Required for the pseudo-element */
+}
+
+.content-container {
+    margin-top: -35px; /* Adjust margin value as needed */
+    padding: 20px; /* Optional padding for content */
+    border-bottom: 1px solid black;
+  }
 
 .logo {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    font-family: poppins bold; 
-    background-color: white;
+    font-family: poppins medium;
+    text-align: left;
+    color: black;
+    margin-left: 0.9em;
 }
 
-nav a {
+
+
+.list a {
+    color: black;
+    font-family: poppins;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    float: left;
-    background-color: white;
-
+    float: right;
 }
 
-nav a:hover {
-    color: rgb(255, 134, 134);
+.heading {
+    font-family:brulia medium ;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 0rem;
 }
 
-.img img {
-    width: 100%;
-    height: auto;
-  }
-  
+.underhed {
+    font-family:brulia medium ;
+    color: rgba(99, 99, 99, 1);
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 1.4rem;
+    margin-top: -35px;
+}
 
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.button-container {
     
-    padding: 3rem calc((100vw - 1300px) /  2); /* Responsive padding */
-} 
-
-.link {
-    background-color: white;
-    margin: 10px;
-}
-.link a {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-    font-family: poppins medium;
-}
-
-.coloumn-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: rgb(0, 0, 0);
-    padding: 0rem 2rem;
-}
-.coloumn-left h1 {
-    margin-bottom: 2rem;
-    font-size: 4rem;
-}
-
-.coloumn-left p {
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
-    line-height: 1.5;
-    font-family: poppins medium;
-}
-
-/* Responsive button with border radius */
-button {
-    padding: 0.7rem 2rem;
-    font-size: 1.25rem; /* Adjust font size for smaller screens */
-    border: none;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-    border-radius: 8vw; /* Responsive border radius using viewport units */
-    font-family: poppins bold;
-    transition: transform 0.2s ease-in-out;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
-.column-right {
-    padding: 0rem 2rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.preset {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: calc(1px + 2px); /* Fixed border radius with some padding */
-}
-
-
-.product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  
-  .product-box {
-    width: 300px;
-    border: 1px solid black;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .product-box img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-  
-  .product-box h3 {
-    margin-bottom: 10px;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: left; /* Aligns buttons horizontally to the center */
+    margin: 0 auto; /* Centers the container horizontally */
+    margin-left: 1.5rem;
     font-family: poppins;
   }
   
-  .product-box p {
-    margin-bottom: 20px;
+  .button-container a {
+    display: inline-block; /* Makes anchor tags behave like block elements */
+    padding: 10px 20px; /* Adjust padding for button size */
+    margin-bottom: 10px; /* Adds gap between buttons */
+    text-decoration: none; /* Removes underline from links */
+    background-color: rgba(214, 214, 214, 1); /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid #000000; /* Button border */
+    transition: transform 0.1s ease-in-out; /* Defines animation properties */
+   
+  }
+
+  .button-container a:hover,
+  .button-container a:active {
+    transform: scale(1.08); /* Enlarge slightly on hover and click */
+  }
+
+  .image-container {
+    position: absolute; /* Absolute positioning for desktop layout */
+    top: 25%; /* Positions the container at the top */
+    right: 15%; /* Positions the container at the right edge */
+    bottom: 0; /* Ensures the container stretches vertically (adjust if needed) */
+    margin: auto; /* Centers the image horizontally within the container */
+    width: 20%; /* Adjust width as needed (desktop layout) */
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-container {
+      display: none; /* Hides the image on mobile screens */
+    }
+  }
+
+footer {
+    background-color: rgb(184, 184, 184);
+    padding-top: 10px;
+}
+.container {
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(184, 184, 184);
+}
+.footer {
+    width: 33.5%;
+    background-color: rgb(184, 184, 184);
+}
+
+h3 {
     font-family: poppins;
-  }
+    font-size: 15px;
+    background-color: rgb(184, 184, 184);
+}
+ p{
+    width: 130px;
+    margin: auto;
+    padding: 7px;
+    font-family: poppins;
+    font-size: 15px;
+    background-color: rgb(184, 184, 184);
+}
+
+.footer-content a {
+    font-family: poppins;
+    font-size: 15px;
+    background-color: rgb(184, 184, 184);
+    
+}
+.footer-content {
+    background-color: rgb(184, 184, 184);
+}
   
-  .buybtn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: quicksand;
-  }
-
-
+  
+  
+  
 
 
